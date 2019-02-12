@@ -94,6 +94,9 @@ public class StorageFile {
             return new AddressBook();
         }
 
+        if(!Files.isWritable(path)){
+            throw new StorageOperationException("Storage File "+ path + "is a read-only file. ");
+        }
         try {
             return AddressBookDecoder.decodeAddressBook(Files.readAllLines(path));
         } catch (FileNotFoundException fnfe) {
