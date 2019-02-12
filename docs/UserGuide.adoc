@@ -156,6 +156,16 @@ Views all details of the 1st person in the results of the `find` command.
 Clears all entries from the address book. +
 Format: `clear`
 
+== Sorting the List : `sort`
+
+Sorts the list according to the user preference using either name, email or address
+Format: `sort TYPE_OF_SORT`
+
+Example:
+
+* `sort email`
+Sorts the list according the email address of everybody
+
 == Exiting the program : `exit`
 
 Exits the program. +
