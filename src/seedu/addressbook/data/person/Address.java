@@ -8,7 +8,7 @@ import java.lang.String;
  * Represents a Person's address in the address book.
  * Guarantees: immutable; is valid as declared in {@link #isValidAddress(String)}
  */
-public class Address {
+public class Address extends Contact{
 
     public static final String EXAMPLE = "123, some street";
     public static final String MESSAGE_ADDRESS_CONSTRAINTS = "Person addresses must in the format : a/BLOCK, STREET, UNIT, POSTAL CODE ";
