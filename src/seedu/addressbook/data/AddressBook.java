@@ -74,4 +74,13 @@ public class AddressBook {
                 || (other instanceof AddressBook // instanceof handles nulls
                         && this.allPersons.equals(((AddressBook) other).allPersons));
     }
+
+    public boolean sort(String type){
+        if(!allPersons.isEmpty()) {
+            allPersons.sort(type);
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
